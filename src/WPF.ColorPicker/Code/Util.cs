@@ -17,8 +17,8 @@ namespace WPF.ColorPicker.Code
 
         public static Color ColorFromHSL(int H, int S, int L)
         {
-            int colorInt = ColorHLSToRGB(H, L, S);
-            byte[] bytes = BitConverter.GetBytes(colorInt);
+            var colorInt = ColorHLSToRGB(H, L, S);
+            var bytes = BitConverter.GetBytes(colorInt);
             return Color.FromArgb(255, bytes[0], bytes[1], bytes[2]);
         }
 
@@ -48,9 +48,9 @@ namespace WPF.ColorPicker.Code
 
         public static BitmapImage GetBitmapImage(BitmapSource bitmapSource)
         {
-            JpegBitmapEncoder encoder = new JpegBitmapEncoder();
-            MemoryStream memoryStream = new MemoryStream();
-            BitmapImage bImg = new BitmapImage();
+            var encoder = new JpegBitmapEncoder();
+            var memoryStream = new MemoryStream();
+            var bImg = new BitmapImage();
 
             encoder.Frames.Add(BitmapFrame.Create(bitmapSource));
             encoder.Save(memoryStream);
@@ -168,11 +168,11 @@ namespace WPF.ColorPicker.Code
         // https://stackoverflow.com/questions/5091455/web-color-list-in-c-sharp-application
         public static List<Color> GetWebColors()
         {
-            Type colors = typeof(System.Drawing.Color);
-            PropertyInfo[] colorInfo = colors.GetProperties(BindingFlags.Public |
-                BindingFlags.Static);
-            List<Color> list = new List<Color>();
-            foreach (PropertyInfo info in colorInfo)
+            var colors = typeof(System.Drawing.Color);
+            var colorInfo = colors.GetProperties(BindingFlags.Public |
+                                                 BindingFlags.Static);
+            var list = new List<Color>();
+            foreach (var info in colorInfo)
             {
                 var c = System.Drawing.Color.FromName(info.Name);
                 list.Add(Color.FromArgb(c.A, c.R, c.G, c.B));
@@ -217,7 +217,7 @@ namespace WPF.ColorPicker.Code
 
         public static T LoadFromXml<T>(this T obj, string filename)
         {
-            T result = default(T);
+            var result = default(T);
             if (File.Exists(filename))
             {
                 var sr = new StreamReader(filename);
@@ -237,7 +237,7 @@ namespace WPF.ColorPicker.Code
 
         public static T LoadFromXmlText<T>(this T obj, string xml)
         {
-            T result = default(T);
+            var result = default(T);
             if (!String.IsNullOrEmpty(xml))
             {
                 var xr = XmlReader.Create(new StringReader(xml));
