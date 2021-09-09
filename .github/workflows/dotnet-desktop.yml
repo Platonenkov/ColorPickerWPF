@@ -19,7 +19,7 @@ jobs:
           dotnet-version: 5.0.x
         
       - name: Building
-        run: dotnet build src\WPF.ColorPicker\WPF.ColorPicker..csproj -c Release
+        run: dotnet build src\WPF.ColorPicker\WPF.ColorPicker.csproj -c Release
         
       - name: Packing
         run: |                    
