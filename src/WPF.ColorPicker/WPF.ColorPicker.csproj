@@ -4,12 +4,31 @@
     <TargetFrameworks>net5.0-windows;net4.5-windows;net4.6-windows;net4.7-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <Authors>https://github.com/Platonenkov</Authors>
+    <Copyright>https://github.com/Platonenkov</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Platonenkov/ColorPickerWPF</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/Platonenkov/ColorPickerWPF</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>color color-picker wpf picker picker-component picker-library</PackageTags>
+    <PackageReleaseNotes>NET 5 support</PackageReleaseNotes>
+    <Description>Simple color picker control for WPF</Description>
+    <Version>5.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0-windows|AnyCPU'">
+    <DocumentationFile>D:\_MainData\ColorPickerWPF\src\WPF.ColorPicker\WPF.ColorPicker.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Resources\colorpicker1.png" />
     <None Remove="Resources\colorpicker2.png" />
     <None Remove="Resources\icon.png" />
+    <None Include="..\..\..\UpdatePackages\UpdatePackages\Resources\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +38,7 @@
   <ItemGroup>
     <Resource Include="Resources\colorpicker1.png" />
     <Resource Include="Resources\colorpicker2.png" />
-    <Resource Include="Resources\icon.png" />
+    <Resource Include="..\..\images\icon.png" />
   </ItemGroup>
 
   <ItemGroup>

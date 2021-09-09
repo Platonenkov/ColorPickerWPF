@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WPF.ColorPicker</name>
+    </assembly>
+    <members>
+        <member name="T:WPF.ColorPicker.ColorPickerControl">
+            <summary>
+            Interaction logic for ColorPickerControl.xaml
+            </summary>
+            <summary>
+            ColorPickerControl
+            </summary>
+        </member>
+        <member name="M:WPF.ColorPicker.ColorPickerControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPF.ColorPicker.ColorPickerSwatch">
+            <summary>
+            Interaction logic for ColorPickerSwatch.xaml
+            </summary>
+            <summary>
+            ColorPickerSwatch
+            </summary>
+        </member>
+        <member name="M:WPF.ColorPicker.ColorPickerSwatch.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPF.ColorPicker.ColorPickerWindow">
+            <summary>
+            Interaction logic for ColorPickerWindow.xaml
+            </summary>
+            <summary>
+            ColorPickerWindow
+            </summary>
+        </member>
+        <member name="M:WPF.ColorPicker.ColorPickerWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPF.ColorPicker.ColorPickRow">
+            <summary>
+            Interaction logic for ColorPickRow.xaml
+            </summary>
+            <summary>
+            ColorPickRow
+            </summary>
+        </member>
+        <member name="M:WPF.ColorPicker.ColorPickRow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WPF.ColorPicker.SliderRow">
+            <summary>
+            Interaction logic for SliderRow.xaml
+            </summary>
+            <summary>
+            SliderRow
+            </summary>
+        </member>
+        <member name="M:WPF.ColorPicker.SliderRow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
