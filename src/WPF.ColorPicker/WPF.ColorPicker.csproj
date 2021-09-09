@@ -14,7 +14,7 @@
     <PackageTags>color color-picker wpf picker picker-component picker-library</PackageTags>
     <PackageReleaseNotes>NET 5 support</PackageReleaseNotes>
     <Description>Simple color picker control for WPF</Description>
-    <Version>5.0.0</Version>
+    <Version>5.0.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0-windows|AnyCPU'">
@@ -25,6 +25,7 @@
     <None Remove="Resources\colorpicker1.png" />
     <None Remove="Resources\colorpicker2.png" />
     <None Remove="Resources\icon.png" />
+    <None Remove="Resources\icon64.png" />
     <None Include="icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
@@ -38,6 +39,8 @@
   <ItemGroup>
     <Resource Include="Resources\colorpicker1.png" />
     <Resource Include="Resources\colorpicker2.png" />
+    <Resource Include="Resources\icon.png" />
+    <Resource Include="Resources\icon64.png" />
   </ItemGroup>
 
   <ItemGroup>
