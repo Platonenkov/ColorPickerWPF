@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Media;
-using ColorPickerWPF.Code;
+using WPF.ColorPicker.Code;
 using UserControl = System.Windows.Controls.UserControl;
 
-namespace ColorPickerWPF
+namespace WPF.ColorPicker
 {
     /// <summary>
     /// Interaction logic for ColorPickRow.xaml

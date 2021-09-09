@@ -6,11 +6,10 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using ColorPickerWPF.Code;
-using ColorPickerWPF.Properties;
+using WPF.ColorPicker.Code;
 using UserControl = System.Windows.Controls.UserControl;
 
-namespace ColorPickerWPF
+namespace WPF.ColorPicker
 {
     /// <summary>
     /// Interaction logic for ColorPickerControl.xaml
@@ -300,7 +299,7 @@ namespace ColorPickerWPF
 
             //var colorPickerImage = System.IO.Path.Combine(Environment.CurrentDirectory, @"/Resources/colorpicker1.png");
             var img =
-                new BitmapImage(new Uri("pack://application:,,,/ColorPickerWPF;component/Resources/colorpicker2.png",
+                new BitmapImage(new Uri("pack://application:,,,/WPF.ColorPicker;component/Resources/colorpicker2.png",
                     UriKind.Absolute));
 
             var writableImage = BitmapFactory.ConvertToPbgra32Format(img);

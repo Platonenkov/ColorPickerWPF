@@ -96,16 +96,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ColorPickerWPF\ColorPickerWPF.csproj">
-      <Project>{7028E44E-407C-4460-A51E-00171036FB36}</Project>
-      <Name>ColorPickerWPF</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="CustomColorPalette.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WPF.ColorPicker\WPF.ColorPicker.csproj">
+      <Project>{5fbaea1e-c156-4bf8-8f55-d91c9300e648}</Project>
+      <Name>WPF.ColorPicker</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Media;
-using ColorPickerWPF.Code;
-using ColorPickerWPF.Properties;
+using WPF.ColorPicker.Code;
 
-namespace ColorPickerWPF
+namespace WPF.ColorPicker
 {
     /// <summary>
     /// Interaction logic for ColorPickerWindow.xaml

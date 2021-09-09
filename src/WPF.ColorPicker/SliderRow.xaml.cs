@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace ColorPickerWPF
+namespace WPF.ColorPicker
 {
     /// <summary>
     /// Interaction logic for SliderRow.xaml

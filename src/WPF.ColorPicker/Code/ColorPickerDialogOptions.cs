@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ColorPickerWPF.Code
+namespace WPF.ColorPicker.Code
 {
     [Flags]
     public enum ColorPickerDialogOptions

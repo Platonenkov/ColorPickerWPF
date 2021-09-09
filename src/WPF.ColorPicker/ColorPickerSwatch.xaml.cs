@@ -1,13 +1,11 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Controls;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
-using ColorPickerWPF.Code;
+using WPF.ColorPicker.Code;
 using UserControl = System.Windows.Controls.UserControl;
 
-namespace ColorPickerWPF
+namespace WPF.ColorPicker
 {
     /// <summary>
     /// Interaction logic for ColorPickerSwatch.xaml

@@ -8,7 +8,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using Color = System.Windows.Media.Color;
 
-namespace ColorPickerWPF.Code
+namespace WPF.ColorPicker.Code
 {
     internal static class Util
     {
