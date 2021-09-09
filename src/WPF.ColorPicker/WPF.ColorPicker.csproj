@@ -25,10 +25,6 @@
     <None Remove="Resources\colorpicker1.png" />
     <None Remove="Resources\colorpicker2.png" />
     <None Remove="Resources\icon.png" />
-    <None Include="..\..\..\UpdatePackages\UpdatePackages\Resources\icon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
