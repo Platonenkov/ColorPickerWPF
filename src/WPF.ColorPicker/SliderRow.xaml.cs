@@ -42,7 +42,7 @@ namespace WPF.ColorPicker
             if (!UpdatingValues)
             {
                 var text = TextBox.Text;
-                bool ok = false;
+                var ok = false;
                 double parsedValue = 0;
 
                 ok = double.TryParse(text, out parsedValue);

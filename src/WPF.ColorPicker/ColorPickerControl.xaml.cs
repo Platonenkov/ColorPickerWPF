@@ -46,9 +46,8 @@ namespace WPF.ColorPicker
                 {
                     ColorPalette = ColorPalette.LoadFromXml(ColorPickerSettings.CustomPaletteFilename);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    ex = ex;
                 }
             }
 
@@ -152,9 +151,9 @@ namespace WPF.ColorPicker
         {
             // https://social.msdn.microsoft.com/Forums/vstudio/en-US/82a5731e-e201-4aaf-8d4b-062b138338fe/getting-pixel-information-from-a-bitmapimage?forum=wpf
 
-            int stride = (int) img.Width*4;
-            int size = (int) img.Height*stride;
-            byte[] pixels = new byte[(int) size];
+            var stride = (int) img.Width*4;
+            var size = (int) img.Height*stride;
+            var pixels = new byte[(int) size];
 
             img.CopyPixels(pixels, stride, 0);
 
@@ -163,12 +162,12 @@ namespace WPF.ColorPicker
             var x = (int) pos.X;
             var y = (int) pos.Y;
 
-            int index = y*stride + 4*x;
+            var index = y*stride + 4*x;
 
-            byte red = pixels[index];
-            byte green = pixels[index + 1];
-            byte blue = pixels[index + 2];
-            byte alpha = pixels[index + 3];
+            var red = pixels[index];
+            var green = pixels[index + 1];
+            var blue = pixels[index + 2];
+            var alpha = pixels[index + 3];
 
             var color = Color.FromArgb(alpha, blue, green, red);
             SetColor(color);
@@ -315,9 +314,9 @@ namespace WPF.ColorPicker
             {
                 long numPixels = img.PixelWidth*img.PixelHeight;
 
-                for (int x = 0; x < img.PixelWidth; x++)
+                for (var x = 0; x < img.PixelWidth; x++)
                 {
-                    for (int y = 0; y < img.PixelHeight; y++)
+                    for (var y = 0; y < img.PixelHeight; y++)
                     {
                         var pixel = writableImage.GetPixel(x, y);
 
@@ -362,9 +361,8 @@ namespace WPF.ColorPicker
             {
                 ColorPalette.SaveToXml(filename);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                ex = ex;
             }
         }
 
@@ -388,9 +386,8 @@ namespace WPF.ColorPicker
                     Swatch2.SwatchListBox.ItemsSource = ColorSwatch2;
 
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    ex = ex;
                 }
 
             }
