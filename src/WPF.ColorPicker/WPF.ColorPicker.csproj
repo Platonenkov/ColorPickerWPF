@@ -25,6 +25,10 @@
     <None Remove="Resources\colorpicker1.png" />
     <None Remove="Resources\colorpicker2.png" />
     <None Remove="Resources\icon.png" />
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -34,7 +38,6 @@
   <ItemGroup>
     <Resource Include="Resources\colorpicker1.png" />
     <Resource Include="Resources\colorpicker2.png" />
-    <Resource Include="..\..\images\icon.png" />
   </ItemGroup>
 
   <ItemGroup>
