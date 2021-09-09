@@ -1,6 +1,10 @@
 # ColorPickerWPF
 
-A simple WPF color picker control for .NET 4.5.2 licensed under MIT. Contains two color gradient images to sample from, and custom palette support.
+`Install-Package WPF.ColorPicker -Version 5.0.0`
+
+`<PackageReference Include="WPF.ColorPicker" Version="5.0.0" />`
+
+A simple WPF color picker control licensed under MIT. Contains two color gradient images to sample from, and custom palette support.
 
 ![screenshot](https://raw.githubusercontent.com/drogoganor/ColorPickerWPF/master/images/Picker1.png)
 
@@ -40,11 +44,8 @@ The palette file, default "ColorPalette.xml", contains both the custom palette c
 
 Unfortunately there is no mechanism for customizing the color gradient sample images at this time, or indeed any other customization. If you require further customization I recommend cloning the repo and adding ColorPickerWPF to your solution.
 
-[ColorPickerWPF on Nuget Gallery](https://www.nuget.org/packages/ColorPickerWPF)
-
 ## Thanks to
 
-[Fatcow Icons](http://www.fatcow.com/free-icons) for the dialog window icon.
 
 [WriteableBitmapEx](https://github.com/teichgraf/WriteableBitmapEx/) for image manipulation code.
 
